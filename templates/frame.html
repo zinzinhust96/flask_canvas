@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Demo</title>
+    <script src="{{ url_for('static', filename='assets/jquery-1.11.1.min.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="{{ url_for('image', saved_name=frame) }}" alt="Frame"/>
+    </div> <!-- /container -->
+
+</body>
+</html>

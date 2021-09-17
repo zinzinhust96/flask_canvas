@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Demo</title>
+    <script src="{{ url_for('static', filename='assets/jquery-1.11.1.min.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h3>Vui lòng chọn image tải lên</h3>
+        <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+            
+            <div class="form-inline video_container">                            
+                <div class="form-group">
+                    <input type="file" name="files[]" id="js-upload-files" accept=".jpg">
+                </div>
+                
+            </div>
+            <div class="form-inline video_container">
+                <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Tải lên</button>
+            </div>
+        </form>    
+    </div> <!-- /container -->
+
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+
+</body>
+</html>
